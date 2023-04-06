@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    display:none;
+}
+
+
+#myButton{
+    align-self:center;
+     /* margin-top:5vh; */
+    font-size: 70px;
+    background-color:#0a0a23;
+    color: #fff;
+    border:2px solid white;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
+
+#myButton:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+}
+
+#myButton:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #e0dfe1;
+    transition: 0.7s;
+}
+
+
+#myButton:active {
+ background-color: #ffbf00;
+}
+
+#scores{
+    align-self: flex-start;
+     margin-top:5vh;
+}
+#score{
+   align-self:flex-start;
+   /* margin-top:5vh; */
+   /* margin-right:0vw; */
+   font-size: 40px;
+    color: white;
+}
+
+#hiscoreBox{
+    
+    align-self:flex-start;
+   /* margin-top:20vh; */
+   margin-right:0vw;
+   font-size: 40px;
+    color: white;
+
+}
+#body{
+    background:rgb(29, 27, 27);
+   min-height: 100vh;
+   background-size: 100vw 100vh;
+   background-repeat: no-repeat;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+
+#board{
+    background: black;
+    width:90vmin;
+    height:90vmin;
+    border: 2px solid white;
+    display:none;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+
+.head{
+    background-color:wheat;
+    /* border-radius: 50%; */
+    background-size: cover; /* or contain, depending on your needs */
+    /* margin-left: 5%;
+    margin-right: 5%; */
+
+  background-position: center center;
+}
+
+
+.snake{
+    background-color:white;
+    /* border-radius: 50%; */
+
+}
+
+.food{
+    background: url("../image/apple-PhotoRoom.png-PhotoRoom.png");
+    
+    background-size: cover; /* or contain, depending on your needs */
+  background-position: center center;
+}
+
+
+
+
+#music{
+    border: 2px solid white;
+    background: url('../image/musicon-removebg-preview.png');
+    height:100px;
+    width:200px;
+    background-size: cover;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+#music:hover{
+    cursor:grab;
+}
